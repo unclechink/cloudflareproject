@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>Curriculum Vitae</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
+            background: #f8f9fa;
         }
         .container {
             max-width: 800px;
@@ -18,15 +16,10 @@
             background: #fff;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2, h3 {
-            color: #333;
+            margin-top: 50px;
         }
         .section {
             margin-bottom: 20px;
-        }
-        .section:last-child {
-            margin-bottom: 0;
         }
         .label {
             font-weight: bold;
@@ -35,31 +28,32 @@
 </head>
 <body>
     <div class="container">
-        <h1>CV</h1>
+        <h1>Curriculum Vitae</h1>
         
         <?php
+            // Contoh data CV yang dapat diganti dengan data dinamis dari database atau input pengguna
             $nama = "Farhan";
-            $alamat = "Bandung,Indonesia";
-            $email = "farhan@gmail.com";
-            $telepon = "+62 812 7979 7890";
-            $deskripsi = "Seorang profesional dengan pengalaman luas di bidang ...";
+            $alamat = "Jakarta, Indonesia";
+            $email = "farhan@example.com";
+            $telepon = "+62 812 3456 7890";
+            $deskripsi = "Seorang profesional berpengalaman di bidang pengembangan perangkat lunak dengan kemampuan dalam berbagai bahasa pemrograman dan framework.";
             $pendidikan = [
                 [
                     "tahun" => "2015 - 2019",
-                    "institusi" => "Universitas Komputer Indonesia",
-                    "gelar" => "Sarjana Komputer"
+                    "institusi" => "Universitas Teknologi XYZ",
+                    "gelar" => "Sarjana Teknik Informatika"
                 ],
                 [
                     "tahun" => "2012 - 2015",
-                    "institusi" => "SMA 1",
-                    "gelar" => "SMA"
+                    "institusi" => "SMA Negeri 1 Jakarta",
+                    "gelar" => "SMA IPA"
                 ]
             ];
             $pengalamanKerja = [
                 [
                     "tahun" => "2020 - Sekarang",
                     "posisi" => "Software Developer",
-                    "perusahaan" => "Perusahaan Teknologi"
+                    "perusahaan" => "Perusahaan Teknologi ABC"
                 ],
                 [
                     "tahun" => "2019 - 2020",
@@ -106,5 +100,7 @@
             </ul>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
